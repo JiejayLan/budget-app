@@ -10,8 +10,8 @@ export default (state = tableList, action) => {
     switch (action.type) {
         case "ADD_ITEM":
             var newState = [...state];
-            newState.push(action.food);
-            console.log("push food",action.food);
+            newState[action.tableID].push(action.food);
+            console.log("push food",action.food, "to",action.tableID);
             return newState;
         case "DELETE_ITEM":
             var newState = [...state];

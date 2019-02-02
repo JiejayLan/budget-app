@@ -1,12 +1,13 @@
 import React from 'react';
-import MiddleProps from "./containers/middle"
+import Middle from "./containers/middle"
 import LeftSide from "./containers/leftSide"
-
+import RightSide from "./containers/rightProps"
 const HelpPage = () => (
     <div>
         This is order page
         <LeftSide/>
-        <MiddleProps/>
+        <Middle/>
+        <RightSide/>
     </div>
 );
 

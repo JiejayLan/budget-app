@@ -6,6 +6,8 @@ import tableItem from "../reducers/tableItems"
 import tableStatus from "../reducers/tableStatus"
 import totalMoney from "../reducers/totalMoney"
 import thunk from 'redux-thunk';
+import  authReducer from '../reducers/auth'
+
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
@@ -16,7 +18,8 @@ export default () => {
             filters: filtersReducer, selectTable:selectTable,
             tableItem:tableItem,
             tableStatus:tableStatus,
-            totalMoney:totalMoney
+            totalMoney:totalMoney,
+            auth:authReducer
 
         }),
         composeEnhancers(applyMiddleware(thunk))

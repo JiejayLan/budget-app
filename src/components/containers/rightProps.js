@@ -1,18 +1,19 @@
-import RightSide from "../components/rightSide.js";
+import RightSide from "./rightSide.js";
 import { connect } from "react-redux";
-import addItem from "../actions/addItem.js";
+import addFood from "../../actions/addFood.js";
 
 const StateToProps = state => {
   return {
     selectTable: state.selectTable,
-    activeTable: state.activeTable
+    activeTable: state.tableStatus
   };
 };
 const dispatchToProps = dispatch => {
   return {
-    onAdd: (tableID, name, price) => {
-      dispatch(addItem(tableID, name, price));
+    onAdd: (name, price, tableID)=>{
+      dispatch(addFood(name, price, tableID));
     }
+
   };
 };
 
