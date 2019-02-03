@@ -1,4 +1,4 @@
-**ClimaApp** is a budget record awebsite by using react, redux and firebase.
+**Expensify** is a budget record awebsite by using react, redux and firebase.
 
 website URL:https://react-expensify-app3.herokuapp.com/
 
