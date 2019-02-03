@@ -35,7 +35,7 @@ firebase.auth().onAuthStateChanged((user) => {
         store.dispatch(login(user.uid));
         store.dispatch(startSetExpense()).then(() => {
             renderApp();
-            history.push('/');
+            // history.push('/');
 
         });
     } else {
